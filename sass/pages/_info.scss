@@ -1,0 +1,57 @@
+// INFO
+
+.info-hero {
+  padding: 8em 0 3em;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+
+  @media (min-width: 544px) {
+    padding: 8em 0 5em;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 14em 0 5em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.info-hero-column {
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  backface-visibility: hidden;
+
+  @media (min-width: 1200px) {
+    margin: 0 2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .info-hero-column:nth-child(2) {
+    max-width: 100%;
+    margin: 0 2em;
+  }
+}
+
+.info-avatar {
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  max-width: 580px;
+  margin: 0 auto 4em;
+
+  @media (min-width: 1200px) {
+    margin: 0 auto;
+  }
+}
+
+.info-avatar img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

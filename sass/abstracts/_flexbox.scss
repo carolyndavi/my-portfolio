@@ -1,0 +1,24 @@
+.flexbox {
+  box-sizing: border-box;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexbox-top {
+  align-items: flex-start;
+}
+
+.flexbox-item {
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.flexbox-block {
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 0;
+  flex: 1;
+  flex-basis: auto;
+}
