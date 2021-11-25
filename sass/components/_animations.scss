@@ -1,6 +1,6 @@
 .hero-loading span {
-  width: 1.5em;
-  height: 1.5em;
+  width: 1em;
+  height: 1em;
   margin: 1em 1em;
   background: $color-rainbow-blue;
   border-radius: 50%;
@@ -9,11 +9,6 @@
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-
-  @media (min-width: 1000px) {
-    height: 2em;
-    width: 2em;
-  }
 }
 
 .hero-loading {
