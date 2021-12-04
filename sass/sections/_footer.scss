@@ -18,5 +18,24 @@
 .footer-link {
   display: inline-block;
   transition: all 0.2s ease-in-out;
-  border-bottom: 3px solid $color-pink;
+}
+
+.footer-link,
+.footer-link span {
+  position: relative;
+  z-index: 10;
+}
+
+.footer-link:before {
+  z-index: 5;
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: 2px;
+  height: 3px;
+  left: 0;
+  display: block;
+  background: #ffc4ff;
+  transition: all 0.2s ease-in-out;
+  transform: rotate(1deg);
 }
