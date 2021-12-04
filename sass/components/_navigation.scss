@@ -58,18 +58,110 @@ a {
   }
 }
 
-.navigation-list-link-home span:hover {
-  border-bottom: 3px solid $color-pink;
+// HOME LINK
+
+.navigation-list-link-home span {
+  position: relative;
+  z-index: 10;
 }
 
-.navigation-list-link-work span:hover {
-  border-bottom: 3px solid $color-pink;
+.navigation-list-link-home span:before {
+  z-index: 5;
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  height: 3px;
+  left: 0;
+  display: block;
+  background: #ffc4ff;
+  transform: translate3d(0, 5px, 0);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 0;
 }
 
-.navigation-list-link-info span:hover {
-  border-bottom: 3px solid $color-pink;
+.navigation-list-link-home:hover span:before {
+  opacity: 1;
+  transform: translateZ(0) scale3d(1.1, 1.1, 1.1) rotate(-2deg);
 }
 
-.navigation-list-link-contact span:hover {
-  border-bottom: 3px solid $color-pink;
+// WORK
+
+.navigation-list-link-work span {
+  position: relative;
+  z-index: 10;
+}
+
+.navigation-list-link-work span:before {
+  z-index: 5;
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  height: 3px;
+  left: 0;
+  display: block;
+  background: #ffc4ff;
+  transform: translate3d(0, 5px, 0);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 0;
+}
+
+.navigation-list-link-work:hover span:before {
+  opacity: 1;
+  transform: translateZ(0) scale3d(1.1, 1.1, 1.1) rotate(1deg);
+}
+
+// INFO
+
+.navigation-list-link-info span {
+  position: relative;
+  z-index: 10;
+}
+
+.navigation-list-link-info span:before {
+  z-index: 5;
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  height: 3px;
+  left: 0;
+  display: block;
+  background: #ffc4ff;
+  transform: translate3d(0, 5px, 0);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 0;
+}
+
+.navigation-list-link-info:hover span:before {
+  opacity: 1;
+  transform: translateZ(0) scale3d(1.1, 1.1, 1.1) rotate(-2deg);
+}
+
+// CONTACT
+
+.navigation-list-link-contact span {
+  position: relative;
+  z-index: 10;
+}
+
+.navigation-list-link-contact span:before {
+  z-index: 5;
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  height: 3px;
+  left: 0;
+  display: block;
+  background: #ffc4ff;
+  transform: translate3d(0, 5px, 0);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  opacity: 0;
+}
+
+.navigation-list-link-contact:hover span:before {
+  opacity: 1;
+  transform: translateZ(0) scale3d(1.1, 1.1, 1.1) rotate(2deg);
 }
