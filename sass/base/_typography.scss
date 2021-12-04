@@ -3,8 +3,8 @@
 .hero-title {
   font-family: $font-secondary;
   font-size: 2.5em;
-  font-weight: 600;
-  letter-spacing: -5px;
+  font-weight: 300;
+  letter-spacing: -1.5px;
   line-height: 110%;
   margin: 0;
   transition: all 0.2s ease-in-out;
@@ -15,7 +15,7 @@
 
   @media (min-width: 1600px) {
     font-size: 6em;
-    letter-spacing: -5px;
+    letter-spacing: -3px;
   }
 }
 
@@ -37,10 +37,9 @@
 .hero-title-sub {
   display: block;
   background-clip: text;
-  padding-bottom: 0.2em;
 
   background: linear-gradient(
-    300deg,
+    320deg,
     $color-rainbow-blue 10%,
     $color-rainbow-purple 50%,
     $color-rainbow-pink 70%,
@@ -52,7 +51,6 @@
 
   @media (min-width: 1000px) {
     background-clip: text;
-    padding-bottom: 0.2em;
 
     background: linear-gradient(
       230deg,
@@ -100,7 +98,7 @@
 .info h1,
 .info h2 {
   font-family: $font-secondary;
-  font-size: 2.1em;
+  font-size: 35px;
   color: $color-white;
   line-height: 150%;
 }
@@ -108,12 +106,20 @@
 .info p {
   color: $color-white;
   font-family: $font-primary;
-  font-size: 1.1em;
-  line-height: 2em;
+  font-size: 18px;
+  line-height: 32px;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .info h1 + p {
   margin: 2em 0 0;
+}
+
+.info h2 {
+  letter-spacing: -1px;
+  max-width: 1120px;
+  margin: 0 auto;
 }
 
 .info p + p {
@@ -124,11 +130,13 @@
 
 .footer-title {
   font-family: $font-secondary;
-  font-size: 2.5em;
-  font-weight: 600;
+  font-size: 40px;
+  font-weight: 300;
   line-height: 120%;
-  letter-spacing: -5px;
+  letter-spacing: -1.5px;
+  color: $color-white;
   position: relative;
+  z-index: 100;
   text-align: center;
   background-clip: text;
 
@@ -143,14 +151,15 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  @media (min-width: 1000px) {
-    font-size: 4em;
+  @media (min-width: 992px) {
+    font-size: 64px;
+    letter-spacing: -2px;
   }
 }
 
 .footer-text {
   color: $color-white;
-  font-size: 1.1em;
+  font-size: 20px;
   line-height: 160%;
   margin-top: 2em;
   position: relative;
