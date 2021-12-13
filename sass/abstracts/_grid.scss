@@ -1,0 +1,40 @@
+.container {
+  max-width: 80rem;
+  margin: auto;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+}
+
+.grid > [class*="column-"] {
+  display: block;
+  padding: 1rem;
+}
+
+.column-xs-12 {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 48rem) {
+  .column-sm-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .column-sm-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+// UTILITIES
+
+.u-margin-left {
+  margin-left: auto !important;
+}
