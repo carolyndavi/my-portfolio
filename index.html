@@ -9,125 +9,215 @@
 
     <link rel="stylesheet" href="sass/main.css" />
     <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+    <script src="js/app.js" defer></script>
   </head>
 
   <body>
+    <!--navigation start-->
     <header class="navigation">
       <nav class="navigation-nav">
-        <ul class="navigation-list navigation-list-info flexbox flexbox-top">
-          <li
-            class="navigation-list-item flexbox-item navigation-list-item-home"
-          >
-            <a class="navigation-list-link navigation-list-link-home" href="#"
-              ><span>Home</span></a
-            >
-          </li>
-
-          <li
-            class="navigation-list-item flexbox-item navigation-list-item-work"
-          >
-            <a
-              class="navigation-list-link navigation-list-link-work"
-              href="pages/work.html"
-              ><span>Work</span></a
-            >
-          </li>
-
-          <li
-            class="navigation-list-item flexbox-item navigation-list-item-info"
-          >
-            <a
-              class="navigation-list-link navigation-list-link-info"
-              href="pages/info.html"
-              ><span>About</span></a
-            >
-          </li>
-
-          <li
-            class="
-              navigation-list-item
-              flexbox-item
-              navigation-list-item-contact
-            "
-          >
-            <a
-              class="navigation-list-link navigation-list-link-contact"
-              href="pages/contact.html"
-              ><span>Contact</span></a
-            >
-          </li>
-
-          <li class="navigation-list-item flexbox-item u-margin-left">
-            <a href="https://twitter.com/cazcodes" class="navigation-list-link"
-              ><img class="navigation-logo" src="img/twitter.png"
-            /></a>
-          </li>
-          <li class="navigation-list-item flexbox-item">
-            <a
-              href="https://github.com/carolyndavi"
-              class="navigation-list-link"
-              ><img class="navigation-logo" src="img/github-logo.png"
-            /></a>
-          </li>
-        </ul>
+        <div class="container">
+          <div class="grid">
+            <div class="column-xs-12 column-sm-12">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="u-margin-left">
+                  <a href="https://twitter.com/cazcodes">
+                    <img class="nav-logo" src="img/twitter.png" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/carolyndavi">
+                    <img class="nav-logo" src="img/github-logo.png" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
+    <!--navigation end-->
 
+    <!--hero section start-->
     <section class="hero">
-      <div class="hero-box">
-        <div class="flexbox-block">
-          <h1 class="hero-title">
-            <span class="hero-title-main">Hi. I'm Carolyn.</span>
-            <span class="hero-title-sub">A Programmer.</span>
-          </h1>
-          <p class="hero-sub">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-            nam. Lorem ipsum dolor sit amet consectetur.
-          </p>
+      <div class="container">
+        <div class="grid">
+          <div class="column-xs-12">
+            <h1 class="hero-title">
+              <span class="hero-title-main">Hi. I'm Carolyn.</span>
+              <span class="hero-title-sub">A Programmer.</span>
+            </h1>
+            <p class="lead">
+              I'm a front-end Web Developer working remotely from Amsterdam, The
+              Netherlands. I enjoy crafting digital experiences through design
+              and code.
+            </p>
+          </div>
         </div>
       </div>
     </section>
+    <!--hero section end-->
 
-    <div class="titles">
-      <a href="#" class="title">
-        <span class="title-category">Heading</span>
-        <h2 class="title-title">Lorem Ipsum</h2>
-        <div class="title-holder">
-          <img class="title-img" src="img/project1.jpg" alt="" />
+    <!--work section start-->
+    <section id="work">
+      <div class="container">
+        <div class="grid">
+          <!--work 1 start-->
+          <div class="column-xs-12 column-sm-6 portfolio-item">
+            <a href="">
+              <figure>
+                <div class="img-container">
+                  <div class="portfolio-img">
+                    <div style="padding-bottom: 100%">
+                      <img src="img/project1.jpg" alt="" class="img-work" />
+                    </div>
+                  </div>
+                </div>
+                <figcaption>
+                  <h3>Lorem Ipsum</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+          <!--work 1 end-->
+
+          <!--work 2 start-->
+          <div class="column-xs-12 column-sm-6 portfolio-item">
+            <a href="">
+              <figure>
+                <div class="img-container">
+                  <div class="portfolio-img">
+                    <div style="padding-bottom: 100%">
+                      <img src="img/project2.jpg" alt="" class="img-work" />
+                    </div>
+                  </div>
+                </div>
+                <figcaption>
+                  <h3>Lorem Ipsum</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+          <!--work 2 end-->
+
+          <!--work 3 start-->
+          <div class="column-xs-12 column-sm-6 portfolio-item">
+            <a href="">
+              <figure>
+                <div class="img-container">
+                  <div class="portfolio-img">
+                    <div style="padding-bottom: 100%">
+                      <img src="img/project3.jpg" alt="" class="img-work" />
+                    </div>
+                  </div>
+                </div>
+                <figcaption>
+                  <h3>Lorem Ipsum</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+          <!--work 3 end-->
+
+          <!--work 4 start-->
+          <div class="column-xs-12 column-sm-6 portfolio-item">
+            <a href="">
+              <figure>
+                <div class="img-container">
+                  <div class="portfolio-img">
+                    <div style="padding-bottom: 100%">
+                      <img src="img/project4.jpg" alt="" class="img-work" />
+                    </div>
+                  </div>
+                </div>
+                <figcaption>
+                  <h3>Lorem Ipsum</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+          <!--work 4 end-->
         </div>
-      </a>
+      </div>
+    </section>
+    <!--work section end-->
 
-      <a href="#" class="title">
-        <span class="title-category">Heading</span>
-        <h2 class="title-title">Lorem Ipsum</h2>
-        <div class="title-holder">
-          <img class="title-img" src="img/project2.jpg" alt="" />
+    <!--about info start-->
+    <section id="about">
+      <div class="container">
+        <div class="grid">
+          <div class="column-xs-12 column-sm-6 portfolio-item">
+            <a href="">
+              <figure>
+                <div class="img-container">
+                  <div class="portfolio-img">
+                    <div style="padding-bottom: 100%">
+                      <img src="img/me.jpg" alt="" class="img-work" />
+                    </div>
+                  </div>
+                </div>
+              </figure>
+            </a>
+          </div>
+          <div class="column-xs-12 column-sm-6 portfolio-item">
+            <div>
+              <div class="column-xs-12 column-md-3 about-info">
+                <h2>A little bit about me..</h2>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+                quia, quasi provident libero asperiores totam. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Voluptates obcaecati
+                minima veritatis. Repudiandae, debitis dicta.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
+                amet nisi aliquam eveniet ea, reprehenderit nesciunt non minima
+                mollitia quaerat? Cum delectus blanditiis nisi neque modi
+                reprehenderit assumenda eveniet cupiditate! Aut numquam est quam
+                praesentium nesciunt eveniet similique quisquam eligendi
+                possimus quae rem consequatur perspiciatis cumque esse pariatur,
+                eos itaque?
+              </p>
+            </div>
+          </div>
         </div>
-      </a>
+      </div>
+    </section>
+    <!--about info end-->
 
-      <a href="#" class="title">
-        <span class="title-category">Heading</span>
-        <h2 class="title-title">Lorem Ipsum</h2>
-        <div class="title-holder">
-          <img class="title-img" src="img/project3.jpg" alt="" />
+    <!--footer start-->
+    <footer id="contact">
+      <div class="container">
+        <div class="footer-container">
+          <h3 class="footer-title">Thank you for stopping by.</h3>
+          <p class="footer-text">
+            Do you want to know more?
+            <span
+              >Send me over a message, and
+              <a href="#" class="footer-link"><span>let's chat</span></a
+              >.</span
+            >
+          </p>
         </div>
-      </a>
-    </div>
-
-    <footer class="footer">
-      <div class="footer-content">
-        <h3 class="footer-title">
-          Lorem ipsum dolor, sit amet consectetur amet.
-        </h3>
-        <p class="footer-text">
-          Do you want to know more?
-          <span
-            >Send me over a message, and
-            <a href="#" class="footer-link"><span>let's chat</span></a
-            >.</span
-          >
-        </p>
       </div>
     </footer>
+    <!--footer end-->
   </body>
 </html>
