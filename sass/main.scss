@@ -1,15 +1,12 @@
-@import "abstracts/flexbox";
+@import "abstracts/grid";
 @import "abstracts/variables";
 
 @import "base/base";
 @import "base/typography";
-@import "base/utilities";
 
 @import "components/navigation";
 
-@import "pages/info";
-@import "pages/work";
-
+@import "sections/about";
 @import "sections/footer";
 @import "sections/hero";
-@import "sections/titles";
+@import "sections/work";
