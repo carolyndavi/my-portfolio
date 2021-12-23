@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Source+Sans+Pro&display=swap");
 .container {
   max-width: 80rem;
   margin: auto;
@@ -36,14 +37,6 @@
   margin-left: auto !important;
 }
 
-@font-face {
-  font-family: Biotif-Regular;
-  src: url(../fonts/Biotif-Regular.woff) format("woff");
-}
-@font-face {
-  font-family: Bogart;
-  src: url(../fonts/Bogart-Medium.woff) format("woff");
-}
 :root {
   --color-grey-light: #777;
   --color-grey-medium: #787878;
@@ -68,7 +61,7 @@ html {
 
 body {
   margin: 0;
-  font-family: Biotif-Regular;
+  font-family: "Source Sans Pro";
   color: var(--color-white);
   line-height: 1.55;
   background: var(--color-dark-dark);
@@ -88,11 +81,11 @@ ul {
 }
 
 .hero-title {
-  font-family: Bogart;
+  font-family: "Lora";
   font-size: 2.3rem;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: -1.5px;
-  line-height: 1.15;
+  line-height: 1.27;
   margin: 0;
   background-clip: text;
   background: linear-gradient(250deg, #a0e9ff 10%, #a162e8 40%, #f093b0 60%, #edca85 90%);
@@ -122,12 +115,12 @@ ul {
 @media (min-width: 62rem) {
   .lead {
     font-size: 1.1rem;
-    max-width: 40rem;
+    max-width: 38rem;
   }
 }
 
 h3 {
-  font-family: Bogart;
+  font-family: "Lora";
   font-size: 1.5rem;
   line-height: 1.1;
   margin: 1.25rem 0 0.5rem;
@@ -141,7 +134,7 @@ h3 {
 }
 
 .about-info h2 {
-  font-family: Bogart;
+  font-family: "Lora";
 }
 @media (min-width: 20rem) {
   .about-info h2 {
@@ -157,12 +150,13 @@ h3 {
 }
 
 .footer-title {
-  font-family: Bogart;
+  font-family: "Lora";
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: -1.5px;
   color: var(--color-white);
   background-clip: text;
+  line-height: 1.25;
   background: linear-gradient(250deg, #a0e9ff 20%, #a162e8 40%, #f093b0 60%, #edca85 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
