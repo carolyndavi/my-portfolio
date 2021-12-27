@@ -10,63 +10,57 @@
     <link rel="stylesheet" href="sass/main.css" />
     <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
     <script src="js/app.js" defer></script>
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
 
   <body>
-    <!--navigation start-->
-    <header class="navigation">
-      <nav class="navigation-nav">
-        <div class="container">
-          <div class="grid">
-            <div class="column-xs-12 column-sm-12">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="u-margin-left">
-                  <a href="https://twitter.com/cazcodes">
-                    <img class="nav-logo" src="img/twitter.png" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/carolyndavi">
-                    <img class="nav-logo" src="img/github-logo.png" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!--navigation end-->
-
-    <!--hero section start-->
-    <section class="hero">
+    <nav>
       <div class="container">
         <div class="grid">
-          <div class="column-xs-12">
-            <h1 class="hero-title">
-              <span class="hero-title-main">Hi. I'm Carolyn.</span>
-              <span class="hero-title-sub">A Programmer.</span>
-            </h1>
+          <div class="column-xs-12 column-md-6">
+            <figure class="avatar">
+              <div class="avatar-block">
+                <a class="" href="">
+                  <div>
+                    <picture>
+                      <img data-feather="code" class="avatar-img" height="60"
+                    /></picture>
+                  </div>
+                </a>
+              </div>
+              <figcaption></figcaption>
+            </figure>
+          </div>
+          <div class="column-xs-12 column-sm-6">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="container">
+        <div class="grid">
+          <div class="column-xs-12 column-sm-12">
+            <h1>Hi. I'm Carolyn. A Programmer.</h1>
             <p class="lead">
-              I'm a front-end Web Developer working remotely from Amsterdam, The
-              Netherlands. I enjoy crafting digital experiences through design
-              and code.
+              I enjoy crafting digital experiences through design and code. I
+              specialize in front-end web development, focusing on turning ideas
+              into delignful and meaningful solutions.
             </p>
           </div>
         </div>
       </div>
-    </section>
-    <!--hero section end-->
+    </header>
 
-    <!--work section start-->
     <section id="work">
       <div class="container">
         <div class="grid">
-          <!--work 1 start-->
           <div class="column-xs-12 column-sm-6 portfolio-item">
             <a href="">
               <figure>
@@ -78,19 +72,18 @@
                   </div>
                 </div>
                 <figcaption>
-                  <h3>Lorem Ipsum</h3>
+                  <h3>Todo App</h3>
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    A todo app built with CSS (SCSS) and JavaScript featuring
+                    add and remove functionality.
                   </p>
                 </figcaption>
               </figure>
             </a>
           </div>
-          <!--work 1 end-->
 
-          <!--work 2 start-->
           <div class="column-xs-12 column-sm-6 portfolio-item">
-            <a href="">
+            <a href="#">
               <figure>
                 <div class="img-container">
                   <div class="portfolio-img">
@@ -100,19 +93,18 @@
                   </div>
                 </div>
                 <figcaption>
-                  <h3>Lorem Ipsum</h3>
+                  <h3>Carousel</h3>
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    This carousel is built with CSS (SCSS) and JavsScript
+                    featuring key press functionality.
                   </p>
                 </figcaption>
               </figure>
             </a>
           </div>
-          <!--work 2 end-->
 
-          <!--work 3 start-->
           <div class="column-xs-12 column-sm-6 portfolio-item">
-            <a href="">
+            <a href="#">
               <figure>
                 <div class="img-container">
                   <div class="portfolio-img">
@@ -122,19 +114,18 @@
                   </div>
                 </div>
                 <figcaption>
-                  <h3>Lorem Ipsum</h3>
+                  <h3>Color Flipper</h3>
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    A color flipper built with CSS (SCSS) and JavaScript
+                    featuring hex codes.
                   </p>
                 </figcaption>
               </figure>
             </a>
           </div>
-          <!--work 3 end-->
 
-          <!--work 4 start-->
           <div class="column-xs-12 column-sm-6 portfolio-item">
-            <a href="">
+            <a href="#">
               <figure>
                 <div class="img-container">
                   <div class="portfolio-img">
@@ -144,26 +135,24 @@
                   </div>
                 </div>
                 <figcaption>
-                  <h3>Lorem Ipsum</h3>
+                  <h3>Gallery</h3>
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Image gallery template built with CSS (SCSS) grid and
+                    flexbox featuring text-following cursor hover effects.
                   </p>
                 </figcaption>
               </figure>
             </a>
           </div>
-          <!--work 4 end-->
         </div>
       </div>
     </section>
-    <!--work section end-->
 
-    <!--about info start-->
     <section id="about">
       <div class="container">
         <div class="grid">
           <div class="column-xs-12 column-sm-6 portfolio-item">
-            <a href="">
+            <a href="#">
               <figure>
                 <div class="img-container">
                   <div class="portfolio-img">
@@ -176,33 +165,34 @@
             </a>
           </div>
           <div class="column-xs-12 column-sm-6 portfolio-item">
-            <div>
-              <div class="column-xs-12 column-md-3 about-info">
-                <h2>A little bit about me..</h2>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
-                quia, quasi provident libero asperiores totam. Lorem ipsum dolor
-                sit amet consectetur adipisicing elit. Voluptates obcaecati
-                minima veritatis. Repudiandae, debitis dicta.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
-                amet nisi aliquam eveniet ea, reprehenderit nesciunt non minima
-                mollitia quaerat? Cum delectus blanditiis nisi neque modi
-                reprehenderit assumenda eveniet cupiditate! Aut numquam est quam
-                praesentium nesciunt eveniet similique quisquam eligendi
-                possimus quae rem consequatur perspiciatis cumque esse pariatur,
-                eos itaque?
-              </p>
-            </div>
+            <h2>
+              I'm Carolyn, a Front-End Web Developer from Amsterdam, The
+              Netherlands.
+            </h2>
+            <p class="about">
+              I enjoy translating designs into responsive, interactive
+              experiences in HTML, CSS, and JavaScript. I enjoy staying on top
+              of emerging trends, applying industry best practices, and adapting
+              to modern web technologies and programs. I have a passion for
+              self-learning and strive to improve and challenge my skills to
+              become better at what I do.
+            </p>
+            <p class="about">
+              When I'm not coding, you can often find me spending my free time
+              drawing, reading, playing video games, or enjoying a cup of
+              coffee.
+            </p>
+            <p class="about">
+              You can also find me on
+              <a href="" class="link">Github</a>
+              and
+              <a href="" class="link">Twitter</a>.
+            </p>
           </div>
         </div>
       </div>
     </section>
-    <!--about info end-->
 
-    <!--footer start-->
     <footer id="contact">
       <div class="container">
         <div class="footer-container">
@@ -218,6 +208,8 @@
         </div>
       </div>
     </footer>
-    <!--footer end-->
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>
