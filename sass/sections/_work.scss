@@ -1,13 +1,19 @@
 #work {
-  padding: 0;
+  padding: 5rem 0 3rem;
+}
 
-  a {
-    display: block;
+#work a {
+  display: block;
+}
 
-    figure {
-      margin-bottom: 1.5rem;
-    }
-  }
+#work a figure {
+  margin-bottom: 1.5rem;
+}
+
+.portfolio-item .img-container {
+  position: relative;
+  display: block;
+  overflow: hidden;
 }
 
 .portfolio-item figure:hover .portfolio-img {

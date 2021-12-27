@@ -1,7 +1,6 @@
-#about {
-  padding: 9rem 0;
-
-  @media (min-width: 62rem) {
-    padding: 15rem 0;
-  }
+#about .container,
+#writing .container {
+  border-top: 0.2rem solid var(--color-dark-light);
+  border-bottom: 0.2rem solid var(--color-dark-light);
+  padding: 3rem 1rem;
 }

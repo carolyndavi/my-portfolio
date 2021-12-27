@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Source+Sans+Pro&display=swap");
-.container {
-  max-width: 80rem;
-  margin: auto;
-  width: 100%;
-  padding: 0 1rem;
+.u-margin-left {
+  margin-left: auto !important;
 }
 
 .grid {
@@ -15,6 +12,11 @@
 .grid > [class*=column-] {
   display: block;
   padding: 1rem;
+}
+
+.column-xs-6 {
+  flex-basis: 50%;
+  max-width: 50%;
 }
 
 .column-xs-12 {
@@ -33,12 +35,68 @@
     max-width: 100%;
   }
 }
-.u-margin-left {
-  margin-left: auto !important;
+@media (min-width: 62rem) {
+  .column-md-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+@supports (display: grid) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .grid > [class*=column-] {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .column-xs-6 {
+    grid-column-start: span 6;
+    grid-column-end: span 6;
+  }
+
+  .column-xs-12 {
+    grid-column-start: span 12;
+    grid-column-end: span 12;
+  }
+
+  @media (min-width: 48rem) {
+    .column-sm-6 {
+      grid-column-start: span 6;
+      grid-column-end: span 6;
+    }
+
+    .column-sm-12 {
+      grid-column-start: span 12;
+      grid-column-end: span 12;
+    }
+  }
+  @media (min-width: 62rem) {
+    .column-md-6 {
+      grid-column-start: span 6;
+      grid-column-end: span 6;
+    }
+
+    .column-md-12 {
+      grid-column-start: span 12;
+      grid-column-end: span 12;
+    }
+  }
+}
+nav .grid > [class*=column-] {
+  padding: 0 1rem;
 }
 
+@media (min-width: 48rem) {
+  nav .grid > [class*=column-] {
+    padding: 0.25rem 1rem;
+  }
+}
 :root {
-  --color-grey-light: #777;
+  --color-grey-light: rgb(161, 161, 161);
   --color-grey-medium: #787878;
   --color-grey-dark: #2e2e2e;
   --color-dark-light: #222;
@@ -61,18 +119,35 @@ html {
 
 body {
   margin: 0;
+  font-size: 1rem;
   font-family: "Source Sans Pro";
   color: var(--color-white);
-  line-height: 1.55;
   background: var(--color-dark-dark);
+  font-weight: 400;
 }
 
+@media (min-width: 48rem) {
+  body {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 62rem) {
+  body {
+    font-size: 1.125rem;
+  }
+}
 a {
+  font-weight: 600;
   text-decoration: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 p {
-  font-size: 1.1rem;
+  color: inherit;
 }
 
 figure,
@@ -80,150 +155,192 @@ ul {
   margin: 0;
 }
 
-.hero-title {
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  margin: 0 2rem 0 0;
+}
+@media (min-width: 48rem) {
+  ul li {
+    margin: 0 2.5rem 0 0;
+  }
+}
+
+h1 {
+  color: var(--color-white);
+  font-size: 2.25rem;
+  font-weight: 600;
   font-family: "Lora";
-  font-size: 2.3rem;
-  font-weight: 500;
   letter-spacing: -1.5px;
-  line-height: 1.27;
+  line-height: 1.26;
   margin: 0;
+  max-width: 15rem;
   background-clip: text;
   background: linear-gradient(250deg, #a0e9ff 10%, #a162e8 40%, #f093b0 60%, #edca85 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media (min-width: 30rem) {
-  .hero-title {
-    font-size: 5rem;
-  }
-}
+
 @media (min-width: 62rem) {
-  .hero-title {
-    background: linear-gradient(250deg, #a0e9ff 55%, #a162e8 70%, #f093b0 85%, #edca85 95%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  h1 {
+    font-size: 4.9rem;
+    max-width: 36rem;
   }
 }
-
-.hero-title-sub {
-  display: block;
+p.lead {
+  font-size: 1.125rem;
+  line-height: 2.2rem;
 }
 
-.lead {
-  font-size: 1rem;
-}
 @media (min-width: 62rem) {
-  .lead {
-    font-size: 1.1rem;
-    max-width: 38rem;
+  p.lead {
+    font-size: 1.2rem;
+    max-width: 36rem;
   }
 }
-
 h3 {
-  font-family: "Lora";
   font-size: 1.5rem;
   line-height: 1.1;
   margin: 1.25rem 0 0.5rem;
   padding: 0;
   color: var(--color-white);
+  font-family: "Lora";
 }
+
 @media (min-width: 62rem) {
   h3 {
-    font-size: 1.7rem;
+    font-size: 1.75rem;
   }
 }
-
-.about-info h2 {
-  font-family: "Lora";
-}
-@media (min-width: 20rem) {
-  .about-info h2 {
-    letter-spacing: -2px;
-    font-size: 2.3rem;
-  }
-}
-@media (min-width: 62rem) {
-  .about-info h2 {
-    letter-spacing: -2px;
-    font-size: 3rem;
-  }
-}
-
-.footer-title {
-  font-family: "Lora";
-  font-size: 3rem;
-  font-weight: 500;
-  letter-spacing: -1.5px;
+h2 {
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: 600;
   color: var(--color-white);
+  margin-top: 0px;
+  font-family: "Lora";
+}
+
+@media (min-width: 62rem) {
+  h2 {
+    margin-top: 2rem;
+    font-size: 2.125rem;
+  }
+}
+.about {
+  line-height: 2.2rem;
+  margin: 2em 0 0;
+  max-width: 35rem;
+}
+
+.link {
+  color: var(--color-white);
+  border-bottom: var(--color-pink) 3px solid;
+}
+
+.container {
+  max-width: 80rem;
+  margin: auto;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+nav {
+  position: absolute;
+  padding: 1.25rem 0;
+  width: 100%;
+}
+
+@media (min-width: 62rem) {
+  nav {
+    padding: 1.75rem 0;
+  }
+}
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+@media (min-width: 48rem) {
+  nav ul {
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+  }
+}
+nav ul li:last-child {
+  margin: 0;
+}
+
+nav ul li a {
+  position: relative;
+  display: inline-block;
+  color: var(--color-grey-light);
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+nav ul li a:focus,
+nav ul li a:hover {
+  color: var(--color-white);
+}
+
+@media (min-width: 62rem) {
+  nav ul li a {
+    font-size: 17px;
+  }
+}
+.avatar-img {
+  color: var(--color-white);
+}
+
+#about .container,
+#writing .container {
+  border-top: 0.2rem solid var(--color-dark-light);
+  border-bottom: 0.2rem solid var(--color-dark-light);
+  padding: 3rem 1rem;
+}
+
+footer {
+  padding: 1.75rem 0 2.75rem;
+}
+
+@media (min-width: 62rem) {
+  footer {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+  }
+}
+.footer-title {
+  font-size: 2.5rem;
+  line-height: 1.3;
   background-clip: text;
-  line-height: 1.25;
-  background: linear-gradient(250deg, #a0e9ff 20%, #a162e8 40%, #f093b0 60%, #edca85 90%);
+  background: linear-gradient(250deg, #a0e9ff 20%, #a162e8 40%, #f093b0 60%, #edca85 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media (min-width: 30rem) {
+@media (min-width: 62rem) {
   .footer-title {
-    font-size: 4rem;
-  }
-}
-
-.footer-text {
-  color: var(--color-white);
-  font-size: 1.2rem;
-}
-
-.navigation {
-  display: block;
-  position: fixed;
-  width: 100%;
-  z-index: 1040;
-  background: var(--color-dark-dark);
-}
-@media (min-width: 62rem) {
-  .navigation {
-    padding: 1.25rem 0;
-    width: 100%;
-  }
-}
-
-nav ul {
-  display: flex;
-  padding: 0;
-  list-style: none;
-}
-nav li {
-  margin: 0 0.2rem 0 0;
-}
-@media (min-width: 48rem) {
-  nav li {
-    margin: 0 5rem 0 0;
-  }
-}
-nav li:last-child {
-  margin: 0;
-}
-nav li a {
-  color: var(--color-white);
-  transition: color 0.2s ease;
-}
-nav li a:focus, nav li a:hover {
-  border-bottom: 3px solid var(--color-pink);
-}
-nav li .nav-logo {
-  width: 1.4em;
-}
-
-#about {
-  padding: 9rem 0;
-}
-@media (min-width: 62rem) {
-  #about {
-    padding: 15rem 0;
+    font-size: 3.3rem;
+    background-clip: text;
+    background: linear-gradient(250deg, #a0e9ff 30%, #a162e8 35%, #f093b0 60%, #edca85 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
 .footer-container {
   text-align: center;
+}
+@media (min-width: 62rem) {
+  .footer-container {
+    padding: 5rem 0;
+  }
 }
 
 footer a {
@@ -231,29 +348,31 @@ footer a {
   border-bottom: var(--color-pink) 3px solid;
 }
 
-@media (min-width: 62rem) {
-  .footer-container {
-    padding-bottom: 9rem;
-  }
-}
-
 .hero {
-  padding: 9rem 0;
+  padding: 9rem 0 0;
 }
 @media (min-width: 62rem) {
   .hero {
-    padding-top: 15rem;
+    padding: 13rem 0 0;
   }
 }
 
 #work {
-  padding: 0;
+  padding: 5rem 0 3rem;
 }
+
 #work a {
   display: block;
 }
+
 #work a figure {
   margin-bottom: 1.5rem;
+}
+
+.portfolio-item .img-container {
+  position: relative;
+  display: block;
+  overflow: hidden;
 }
 
 .portfolio-item figure:hover .portfolio-img {
